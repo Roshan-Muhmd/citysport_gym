@@ -3,6 +3,9 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 
 .layout_padding {
   padding-top: 120px;
@@ -238,6 +241,11 @@ a:focus {
   font-weight: bold;
 }
 
+.slider_section .detail-box h1 {
+  color: #ff0233;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .slider_section .detail-box h2 {
   font-size: 2.5rem;
 }
@@ -295,7 +303,7 @@ a:focus {
 }
 
 .us_section {
-  background-image: url(../images/us-bg.jpg);
+  background-image: url(../images/healthy-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -342,7 +350,7 @@ a:focus {
 }
 
 .heathy_section {
-  background-image: url(../images/healthy-bg.jpg);
+  background-image: url(../images/us-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -351,6 +359,14 @@ a:focus {
 
 .heathy_section h2 {
   font-weight: bold;
+}
+
+
+
+.heathy_section h2 span:nth-of-type(2) {
+  color: transparent;
+  color: #ff2953;           /* Make the text inside transparent */
+  
 }
 
 .heathy_section p {
@@ -435,6 +451,31 @@ a:focus {
   border-radius: 50px;
   margin-top: -25px;
 }
+
+/* Base styling for ul */
+.stylish-ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center-align all text in the list */
+}
+
+/* Style for list items */
+.stylish-ul li {
+  text-align: left;
+  padding: 10px 15px;
+  background: url(../images/crossfit.png) no-repeat left center;
+  background-size: 25px 25px;
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+
+
 
 .contact_section {
   position: relative;

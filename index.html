@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Neogym</title>
+  <title>Citysport</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Neogym
+              Citysport
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,21 +50,24 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="why.html"> Why us </a>
+                  <a class="nav-link" href="#why_us"> Why us </a>
                 </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#our_services"> Our services </a>
                 </li>
-                <li class="nav-item">
+                
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="trainer.html"> trainers</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html"> Contact Us</a>
-                </li>
+                </li> -->
               </ul>
-              <div class="user_option">
+             <!--  <div class="user_option">
                 <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                   <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
                 </form>
-              </div>
+              </div> -->
             </div>
           </div>
         </nav>
@@ -72,9 +75,50 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
+    
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h3>
+                  Welcome To
+                </h3>
+                <h1>
+                  Citysport
+                </h1>
+                <h2>
+                  Bodybuilding
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
+                </p>
+                <div class="">
+                  <a id="callButton" href="">
+                    Contact Us
+                  </a>
+                  <script>
+                    document.getElementById('callButton').addEventListener('click', function() {
+                        const phoneNumber = '+1234567890'; // Replace with your phone number
+            
+                        // Copy the number to clipboard
+                        navigator.clipboard.writeText(phoneNumber).then(() => {
+                            console.log('Phone number copied to clipboard:', phoneNumber);
+                        }).catch(err => {
+                            console.error('Failed to copy: ', err);
+                        });
+            
+                        // Open dial pad with the phone number
+                        window.location.href = `tel:${phoneNumber}`;
+                    });
+                </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
               <div class="col-lg-10 col-md-11 mx-auto">
@@ -210,23 +254,63 @@
               </div>
             </div>
           </div>
-        </div>
-        <ol class="carousel-indicators">
+        </div> -->
+        <!-- <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        </ol>
+        </ol> -->
       </div>
     </section>
     <!-- end slider section -->
   </div>
 
+  <!-- services section -->
+
+  <section id="our_services" class="heathy_section layout_padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="detail-box">
+            <div>
+            <h2>
+              <span> SERVICES  </span> 
+              <span>  WE OFFER </span> 
+            </h2>
+          </div>
+            <p>
+              <ul class="stylish-ul">
+                <li>Personal Training</li>
+                <li>Hyrox Preperations</li>
+                <li>Muscle building</li>
+                <li>Fatloss Programs</li>
+                <li>Personal Training</li>
+                <li>Hyrox Preperations</li>
+                <li>Muscle building</li>
+                <li>Fatloss Programs</li>
+              </ul>
+            </p>
+           <!--  <div class="btn-box">
+              <a href="">
+                READ MORE
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end services section -->
+
 
   <!-- Us section -->
 
-  <section class="us_section layout_padding">
+  <section id="why_us" class="us_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -304,37 +388,11 @@
   <!-- end us section -->
 
 
-  <!-- heathy section -->
-
-  <section class="heathy_section layout_padding">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <div class="detail-box">
-            <h2>
-              HEALTHY MIND, HEALTHY BODY
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            </p>
-            <div class="btn-box">
-              <a href="">
-                READ MORE
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- end heathy section -->
+  
 
   <!-- trainer section -->
 
-  <section class="trainer_section layout_padding">
+  <!-- <section class="trainer_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -413,13 +471,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end trainer section -->
 
   <!-- contact section -->
 
-  <section class="contact_section ">
+  <!-- <section class="contact_section ">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 px-0">
@@ -457,7 +515,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end contact section -->
 
@@ -508,12 +566,7 @@
   <!-- end info_section -->
 
   <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2020 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
+ 
   <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
