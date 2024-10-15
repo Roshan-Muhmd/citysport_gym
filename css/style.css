@@ -1,7 +1,15 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  background-color:#000000;
+  background-image: url('../images/halflogo.png'); /* Path to your PNG image */
+  background-color: black; /* Set background color to black */
+  background-position: right center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: 50%; /* Ensure the image covers the entire body */
+  background-attachment: fixed; /* Make the image stay fixed during scrolling */
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+  margin: 0;
 }
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
@@ -57,7 +65,7 @@ html {
   left: 50%;
   width: 55px;
   height: 5px;
-  background-color: #ff2953;
+  /* background-color: #ff2953; */
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -72,9 +80,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/hero-bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+          /* background-image: url('../images/logo.png');
+          background-position: right center; 
+    background-size: 200% auto; 
+    background-repeat: no-repeat; 
+  background-attachment: fixed; */
 }
 
 
@@ -93,8 +103,10 @@ html {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
-  background-color: #69303cc2;
+  background-color: #020202cc;
+ 
 }
+
 
 .header_section .nav_container {
   margin: 0 auto;
@@ -216,18 +228,19 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
+  background-color: #020202cc;
+  
 }
 
-.slider_section::before {
+/* .slider_section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #69303cc2; /* Adjust the color and opacity */
-   /* Ensure it is behind content */
-}
+  background-color: #020202b0;
+} */
 
 .slider_section #carouselExampleIndicators {
   width: 100%;
@@ -363,12 +376,24 @@ a:focus {
 }
 
 .heathy_section {
-  background-image: url(../images/us-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
   text-align: center;
+  background-color: #000000;
+  background-image: url(../images/young-fitness-man-studio.jpg);
 }
+
+@media (max-width: 767px) {
+  .heathy_section {
+    background-image: url(../images/adult-training-with-dumbbell.png); /* Path to your PNG image */
+    background-position: right center; /* Align background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-size: cover; /* Adjust size (cover the screen) */
+    background-attachment: scroll; /* Normal scrolling for mobile */
+  }
+}
+
 
 .heathy_section h2 {
   font-weight: bold;
@@ -378,7 +403,8 @@ a:focus {
 
 .heathy_section h2 span:nth-of-type(2) {
   color: transparent;
-  color: #ff2953;           /* Make the text inside transparent */
+  color: #ff2953;  
+  text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5)         /* Make the text inside transparent */
   
 }
 
@@ -477,8 +503,8 @@ a:focus {
 .stylish-ul li {
   text-align: left;
   padding: 10px 15px;
-  background: url(../images/crossfit.png) no-repeat left center;
-  background-size: 25px 25px;
+/*   background: url(../images/crossfit.png) no-repeat left center;
+  background-size: 25px 25px; */
   position: relative;
   padding-left: 40px;
   font-size: 1.25rem;
@@ -487,6 +513,28 @@ a:focus {
   margin: 20px;
 }
 
+.stylish-ul li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: red; /* Red dot */
+  border-radius: 50%; /* Make it a circle */
+}
+
+/* Red bullet for desktop view */
+@media (min-width: 768px) {
+  .stylish-ul li {
+    background: none; /* No background image */
+    padding-left: 30px; /* Adjust padding for red bullet */
+    position: relative;
+  }
+
+  
+}
 
 
 
